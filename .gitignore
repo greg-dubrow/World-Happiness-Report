@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+.httr-oauth
+.Rprofile
+*.xlsx
+data/*.xlsx
+*.xls
+data/*.xls
+*.csv
+data/*.csv
+*.pdf
+data/*.pdf
+report_variable.html

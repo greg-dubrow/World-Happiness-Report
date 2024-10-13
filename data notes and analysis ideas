@@ -1,0 +1,55 @@
+Data from
+World Happiness Report website
+
+https://worldhappiness.report/
+Has data for table 2.1 and fig 2.1 for many years going back
+Fig 2.1 is ladder scores arranged by country. Cols include raw data for individual elements
+
+Table 2 is regression to predict scores. Data is for all years, tattered panel (?)
+
+
+Kaggle -
+2021 report data, includes region names to match to country
+https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2021?select=world-happiness-report-2021.csv
+
+Aggregated to 2021
+https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2021?select=world-happiness-report.csv
+
+## GINI indices from world bank - what are most common latest years for each country? Use most recent 5 years for each country?
+https://data.worldbank.org/indicator/SI.POV.GINI
+
+## Analysis ideas
+
+From this article, scores of trust
+https://www.theguardian.com/lifeandstyle/article/2024/may/22/the-denmark-secret-how-it-became-the-worlds-most-trusting-country-and-why-that-matters
+
+https://ourworldindata.org/grapher/self-reported-trust-attitudes?time=2022
+
+https://www.sciencenordic.com/denmark-politics-society-and-culture/researcher-denmarks-world-record-level-of-trust-is-helping-us-in-the-fight-against-corona/1662939#:~:text=0%20is%2C%20%E2%80%99you%20cannot%20be,)%20and%20Sweden%20(6.20)
+https://en.unipress.dk/udgivelser/t/trust/ https://en.unipress.dk/media/17130/trust.pdf
+General EDA using packages DataExplorer, explorer, correlationfunnel,
+
+collapse vs DataExplorer vs explorer? gtextras?
+
+Scatterplots:
+Each variable against ladder score. Color code by region. Figure out way to do interactive with rollover for country name?
+Are the most generous countries the happiest?
+Relationship between GDP & happiness
+Regression to either replicate report or do one predicting a single year? Or year by year to see which
+gganimate go year by year on scatterplots of variables against happiness score...or do interactive, select variable, country/region
+
+Predicted vs actual on divergin bar chart like this
+https://peder.quarto.pub/blog/posts/apr_30day_p2/#april-day-5---diverging
+
+## Other data to use
+https://europeanvaluesstudy.eu/
+https://www.worldvaluessurvey.org/wvs.jsp
+
+european social survey
+install.packages("essurvey")
+# European Social Survey
+# https://cran.r-project.org/web/packages/essurvey/vignettes/intro_ess.html
+https://www.europeansocialsurvey.org/data
+
+Alcohol consumption and happiness
+Use OECD alcohol consumption data https://stats.oecd.org/Index.aspx?ThemeTreeId=9
