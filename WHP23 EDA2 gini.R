@@ -17,7 +17,7 @@ library(ggrepel) # helper functions for ggplot text
 
 
 ### load data created in WHP23 EDA.R
-whr23_fig2_1a <- readRDS(file = "~/Data/r/World Happiness Report/data/whr23_fig2_1.rds") %>%
+whr23_fig2_1a <- readRDS(file = "~/Data/r/World-Happiness-Report/data/whr23_fig2_1.rds") %>%
 	filter(!is.na(ladder_score)) %>%
 	rename(region_whr = region)
 glimpse(whr23_fig2_1a)
@@ -94,7 +94,7 @@ whr23_fig2_1 <- whr23_fig2_1a %>%
 	filter(!is.na(ladder_score))
 glimpse(whr23_fig2_1)
 
-saveRDS(whr23_fig2_1, file = "~/Data/r/World Happiness Report/data/whr23_fig2_1.rds")
+saveRDS(whr23_fig2_1, file = "~/Data/r/World-Happiness-Report/data/whr23_fig2_1.rds")
 
 
 whr23_fig2_1 %>%

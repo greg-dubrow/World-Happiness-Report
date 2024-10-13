@@ -23,7 +23,7 @@ View(DataExplorer::plot_scatterplot)
 # load data created in WHP23 EDA.R -------------------------------------------------------------------
 
 ### load data created in WHP23 EDA.R
-whr23_fig2_1 <- readRDS(file = "~/Data/r/World Happiness Report/data/whr23_fig2_1.rds") %>%
+whr23_fig2_1 <- readRDS(file = "~/Data/r/World-Happiness-Report/data/whr23_fig2_1.rds") %>%
 	mutate(income = ifelse(is.na(income), "Not classified", income)) %>%
 	mutate(lending = ifelse(is.na(lending), "Not classified", lending)) %>%
 	mutate(region = ifelse(is.na(region), "East Asia & Pacific", region))

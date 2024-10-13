@@ -202,7 +202,7 @@ whr23_fig2_1 %>%
 
 ## creates html report of all individual reports
 whr23_fig2_1 %>%
-	report(output_dir = "~/data/r/World Happiness Report")
+	report(output_dir = "~/data/r/World-Happiness-Report")
 
 ### skimr
 whr23_fig2_1 %>%
